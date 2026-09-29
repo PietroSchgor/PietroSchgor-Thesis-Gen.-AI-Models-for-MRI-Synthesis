@@ -32,3 +32,5 @@ Contains the final thesis manuscript and formatting assets.
 ## Setup and Requirements
 The deep learning models and scripts are implemented in **PyTorch** and utilize **TorchIO** for efficient medical image handling and augmentation. 
 Please ensure all dependencies are installed before running the notebooks or training scripts.
+
+**Hardware Note:** The Jupyter notebooks in the `notebooks/` folder are specifically configured to run on Kaggle environments, leveraging the available **NVIDIA Tesla T4 GPU equipped with 16 GB of dedicated VRAM**. Ensure your environment matches or exceeds these specifications for optimal performance.
