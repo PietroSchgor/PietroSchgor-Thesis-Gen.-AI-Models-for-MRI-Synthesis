@@ -16,7 +16,8 @@ Contains the implementation of the **SFCN** (Simple Fully Convolutional Network)
 - For more details, please refer to the original paper: [Accurate brain age prediction with lightweight deep neural networks (Peng et al.)](https://doi.org/10.1016/j.media.2020.101871).
 
 ### 3. `notebooks/`
-A collection of standalone Jupyter Notebooks used for prototyping, training, and testing various Generative Adversarial Networks and classification models:
+A collection of standalone Jupyter Notebooks used for prototyping, training, and testing various Generative Adversarial Networks and classification models.
+- **Source Note:** The implementations of **Ea-GAN** and **Pix2Pix** inside these notebooks are adapted from the [by-lab/Ea-GANs GitHub repository](https://github.com/by-lab/Ea-GANs.git).
 - **`eagan.ipynb`**: Implementation of the Edge-aware GAN (Ea-GAN) for medical image translation.
 - **`Age Prediction.ipynb`**: Experimental pipeline for brain age regression tasks.
 - **`FCD classification.ipynb`**: Pipeline for the binary classification of Focal Cortical Dysplasia.
