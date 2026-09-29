@@ -1,6 +1,6 @@
 # Master's Thesis Repository
 
-This repository contains the complete source code, Jupyter notebooks, and final documentation for my Master's Thesis. 
+This repository contains a selection of the most important codes—specifically the implementation of the key models of the thesis work—and the final documentation for my Master's Thesis. 
 
 ## Repository Structure
 
