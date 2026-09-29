@@ -1,0 +1,6 @@
+MAE per fold (Site):
+Guys: 6.1716
+HH: 6.8561
+IOP: 7.3566
+
+Total MAE: 6.5390

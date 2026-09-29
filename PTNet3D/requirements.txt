@@ -1,0 +1,25 @@
+# PyTorch e Visione
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Gestione Dati e Immagini Mediche
+nibabel>=5.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+Pillow>=9.0.0
+
+# Modelli e Layer Aggiuntivi
+timm>=0.9.0
+unfoldNd>=0.2.1
+dominate>=2.4.0
+
+# Metriche e Valutazione (per cal_metric.py)
+scikit-image>=0.21.0
+scikit-learn>=1.3.0
+pytorch-fid>=0.3.0
+lpips
+imageio
+matplotlib
+scipy
+torchio
+tqdm

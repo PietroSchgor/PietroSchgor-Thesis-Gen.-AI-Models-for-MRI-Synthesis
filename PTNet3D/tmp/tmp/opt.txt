@@ -1,0 +1,41 @@
+------------ Options -------------
+batchSize: 4
+beta1: 0.9
+checkpoints_dir: tmp
+code_list: 
+dataroot: tmp
+debug: False
+dimension: 3D
+dir_A: 
+dir_B: 
+display_freq: 100
+display_winsize: 512
+early_stopping_file: 
+extension: .nii
+gpu_ids: [0]
+input_nc: 1
+isTrain: True
+iter_file: 
+lr: 0.0002
+nThreads: 0
+name: tmp
+niter: 1000
+niter_decay: 1000
+no_html: False
+norm_perc: 99.95
+patch_size: (64, 64, 64)
+patience: 50
+phase: train
+print_freq: 100
+remove_bg: True
+resume_D: 
+resume_G: 
+save_epoch_freq: 1
+save_latest_freq: 1000
+val_code_list: 
+val_dir_A: 
+val_dir_B: 
+weight_fsim: 1.0
+weight_lpips: 1.0
+weight_ssim: 1.0
+-------------- End ----------------
