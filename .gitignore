@@ -32,3 +32,7 @@ venv.bak/
 *.zip
 *.tar.gz
 *.rar
+
+SFCN/results age IXI/
+SFCN/paper images/
+SFCN/results epilessia/
