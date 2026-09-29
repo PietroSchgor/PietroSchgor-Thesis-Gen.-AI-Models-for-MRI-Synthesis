@@ -335,9 +335,9 @@ To extract structural details, the model utilizes a 3D Sobel edge detector, deno
 \end{equation}
 where $*$ denotes the convolution operation.
 
-The generator component ($G$) shares the same 3D U-Net architecture described for Pix2Pix (Figure~\ref{fig:unet_pix2pix}). However, unlike the standard Pix2Pix generator that takes a single-channel 3D volume as input, the Ea-GAN generator takes a $2$-channel input, concatenating the source volume with its corresponding 3D edge map.
+The generator component ($G$) shares the exact same 3D U-Net architecture and single-channel input described for Pix2Pix (Figure~\ref{fig:unet_pix2pix}). In the Ea-GAN framework, the 3D edge map is used within the loss function to provide explicit edge-aware supervision during training.
 
-Likewise, the Pix2Pix discriminator evaluates a $2$-channel input (concatenated source and target/synthesized volumes), whereas the Ea-GAN discriminator evaluates a $3$-channel input: the source image, the target or synthesized image, and the corresponding target or synthesized edge map.
+The structural difference resides in the discriminator. While the standard Pix2Pix discriminator evaluates a $2$-channel input (the concatenated source and target/synthesized volumes), the Ea-GAN discriminator is modified to evaluate a $3$-channel input: the source image, the target (or synthesized) image, and the corresponding target (or synthesized) edge map.
 
 To extract these 3D edge maps dynamically during training, Ea-GAN incorporates a custom, differentiable 3D Sobel layer operating directly on the GPU. It applies three fixed $3 \times 3 \times 3$ convolutional kernels to compute spatial gradients along the axial, coronal, and sagittal axes. To prevent artificial gradients at the volume boundaries, the input is explicitly padded with a constant value of $-1.0$. The gradient magnitudes are aggregated using the $L2$ norm across the directional channels and passed through a \texttt{Tanh} activation function, safely scaling the edge maps to the $[-1, 1]$ range.
 

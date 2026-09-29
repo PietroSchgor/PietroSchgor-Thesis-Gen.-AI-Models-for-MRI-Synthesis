@@ -13,7 +13,7 @@ Contains the implementation of the **SFCN** (Simple Fully Convolutional Network)
 - Primarily used for downstream clinical evaluation tasks such as **Brain Age Prediction** and **Focal Cortical Dysplasia (FCD) / Epilepsy Classification**.
 - Includes cross-validation scripts and model weights evaluated on multiple datasets.
 
-### 3. `Downloads_Codes/`
+### 3. `notebooks/`
 A collection of standalone Jupyter Notebooks used for prototyping, training, and testing various Generative Adversarial Networks and classification models:
 - **`eagan.ipynb`**: Implementation of the Edge-aware GAN (Ea-GAN) for medical image translation.
 - **`Age Prediction.ipynb`**: Experimental pipeline for brain age regression tasks.
@@ -22,7 +22,7 @@ A collection of standalone Jupyter Notebooks used for prototyping, training, and
 - **`ptnet.ipynb`**: Experimental notebook for PTNet operations and exploratory analysis.
 - **`testing from saved images.ipynb`**: Utility notebook designed to compute comprehensive clinical and perceptual metrics directly from saved NIfTI output volumes.
 
-### 4. `TESI_PRONTA_DA_CARICARE/`
+### 4. `latex thesis/`
 Contains the final thesis manuscript and formatting assets.
 - **`Thesis.tex`**: The main LaTeX source file of the thesis.
 - **`bibliography.bib`**: Reference list and citations.
