@@ -6,12 +6,14 @@ This repository contains the complete source code, experimental notebooks, and f
 
 ### 1. `PTNet3D/`
 Contains the source code for the **PTNet3D** architecture (3D High-Resolution Longitudinal Infant Brain MRI Synthesizer Based on Transformers). 
-- Includes custom data loaders, network definitions, training routines, and evaluation metrics.
+- **Note:** This folder is cloned directly from the original authors' repository. It contains the original README and codebase.
+- For more details, please refer to the original paper: [PTNet3D: A 3D High-Resolution Longitudinal Infant Brain MRI Synthesizer Based on Transformers](https://doi.org/10.1109/TMI.2022.3174827).
 
 ### 2. `SFCN/`
 Contains the implementation of the **SFCN** (Simple Fully Convolutional Network).
+- **Note:** This folder is cloned directly from the original authors' repository. It contains the original README and implementation details.
 - Primarily used for downstream clinical evaluation tasks such as **Brain Age Prediction** and **Focal Cortical Dysplasia (FCD) / Epilepsy Classification**.
-- Includes cross-validation scripts and model weights evaluated on multiple datasets.
+- For more details, please refer to the original paper: [Accurate brain age prediction with lightweight deep neural networks (Peng et al.)](https://doi.org/10.1016/j.media.2020.101871).
 
 ### 3. `notebooks/`
 A collection of standalone Jupyter Notebooks used for prototyping, training, and testing various Generative Adversarial Networks and classification models:
